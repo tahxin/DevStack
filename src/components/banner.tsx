@@ -2,11 +2,10 @@ import BannerPic from '../assets/banner-stack.png';
 
 const Banner = () => {
   return (
-    <div className="flex items-center justify-between w-full p-8 gap-8">
-      
-      {/* Text */}
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full p-8 gap-8">
+
       <div className="flex-1">
-        <h1 className="text-6xl font-bold mb-4">
+        <h1 className="text-3xl md:text-6xl font-bold mb-4">
           Build Your Ideal Development Stack
         </h1>
 
@@ -27,7 +26,6 @@ const Banner = () => {
         </div>
       </div>
 
-      {/* Image */}
       <div className="flex-1">
         <img src={BannerPic} alt="Banner" className="w-full" />
       </div>

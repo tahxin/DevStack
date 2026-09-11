@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Banner />
       <Explore />
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex-row">
         <Technologies onAdd={addToStack} />
         <Mystack
           stack={stack}

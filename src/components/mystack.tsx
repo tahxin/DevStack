@@ -8,7 +8,7 @@ type Props = {
 
 export default function Mystack({ stack, onRemove, onRemoveAll }: Props) {
   return (
-    <div className="card bg-base-100 shadow-sm border border-base-200 w-72 h-fit sticky top-4 p-5 mr-4 mt-4 shrink-0">
+    <div className="card bg-base-100 shadow-sm border border-base-200 w-full md:w-72 h-fit md:sticky md:top-4 p-5 md:mr-4 mt-4 md:shrink-0">
 
       <h2 className="font-bold text-xl mb-1">Your Stack</h2>
 
