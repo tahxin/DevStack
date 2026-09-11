@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden md:flex gap-3">
-          <button className="btn btn-primary">Sign In</button>
+          <button className="btn btn-ghost">Sign In</button>
           <button className="btn btn-secondary bg-linear-to-r from-blue-500 to-purple-500 rounded-3xl">Sign Up</button>
         </div>
 
@@ -50,7 +50,7 @@ const Navbar = () => {
             <li><a href="/contact">Contact</a></li>
           </ul>
           <div className="flex gap-3 pt-2">
-            <button className="btn btn-primary">Sign In</button>
+            <button className="btn btn-ghost">Sign In</button>
             <button className="btn btn-secondary bg-linear-to-r from-blue-500 to-purple-500 rounded-3xl">Sign Up</button>
           </div>
         </div>
