@@ -171,6 +171,8 @@ This pattern keeps all the real state in the parent (`App.tsx` via `useStack`) w
 
 <div align="center">
 
-Made with back breaking fever and bad posture and tasty NAPA Extra and exam pressure on mind.Thank you.
+Made with back-breaking fever, terrible posture , tasty NAPA Extra , and an exam pressure sitting permanently on my mind 📚💀.
+
+Thank you. 🫡
 
 </div>
