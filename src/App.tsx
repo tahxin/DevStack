@@ -1,4 +1,6 @@
 import './App.css'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Navbar from './components/navbar.tsx'
 import Banner from './components/banner.tsx'
 import Footer from './components/footer.tsx'
@@ -12,11 +14,12 @@ function App() {
 
   return (
     <>
+      <ToastContainer position="bottom-right" autoClose={2500} pauseOnHover />
       <Navbar />
       <Banner />
       <Explore />
       <div className="flex flex-col md:flex-row">
-        <Technologies onAdd={addToStack} />
+        <Technologies stack={stack} onAdd={addToStack} />
         <Mystack
           stack={stack}
           onRemove={removeFromStack}

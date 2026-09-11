@@ -8,10 +8,11 @@ export interface TechCardProps {
   badge?: string
   tags: string[]
   rating: number
+  isAdded: boolean
   onAdd: (tech: Tech) => void
 }
 
-export default function TechCard({ id, name, description, logo, badge, tags, rating, onAdd }: TechCardProps) {
+export default function TechCard({ id, name, description, logo, badge, tags, rating, isAdded, onAdd }: TechCardProps) {
   return (
     <div className="card bg-base-100 shadow-sm hover:shadow-md border border-base-200">
       <div className="card-body p-6">
@@ -31,7 +32,7 @@ export default function TechCard({ id, name, description, logo, badge, tags, rat
         <p className="text-sm text-base-content/70 grow">{description}</p>
 
         <div className="flex items-center justify-between mt-4">
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {tags.map((tag, index) => (
               <span key={index} className="badge badge-ghost text-xs">{tag}</span>
             ))}
@@ -44,10 +45,15 @@ export default function TechCard({ id, name, description, logo, badge, tags, rat
 
         <div className="card-actions mt-4">
           <button
-            className="btn btn-neutral w-full rounded-xl"
+            className={`btn w-full rounded-xl transition-all ${
+              isAdded
+                ? 'btn-success btn-outline cursor-not-allowed opacity-70'
+                : 'bg-gradient-to-r from-blue-500 to-purple-500 text-white border-none hover:opacity-90'
+            }`}
             onClick={() => onAdd({ id, name, logo, tags })}
+            disabled={isAdded}
           >
-            Add to Stack
+            {isAdded ? '✓ Added to Stack' : 'Add to Stack'}
           </button>
         </div>
 

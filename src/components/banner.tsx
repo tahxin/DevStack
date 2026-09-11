@@ -2,35 +2,42 @@ import BannerPic from '../assets/banner-stack.png';
 
 const Banner = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full p-8 gap-8">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between w-full px-8 py-16 md:py-24 gap-12">
 
-      <div className="flex-1">
-        <h1 className="text-3xl md:text-6xl font-bold mb-4">
-          Build Your Ideal Development Stack
+      <div className="flex-1 flex flex-col gap-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+          Build Your Ideal{' '}
+          <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            Development Stack
+          </span>
         </h1>
 
-        <p className="text-md mb-6">
+        <p className="text-base md:text-lg text-base-content/70 max-w-lg leading-relaxed">
           Explore frontend, backend, database, and tooling options, compare
           them side by side, and put together the stack that fits your next
           project.
         </p>
 
-        <div className="flex gap-4">
-          <button className="btn btn-primary">
+        <div className="flex flex-wrap gap-4">
+          <button className="btn rounded-3xl bg-gradient-to-r from-blue-500 to-purple-500 text-white border-none hover:opacity-90 px-6">
             Explore Technologies
           </button>
 
-          <button className="btn btn-secondary">
+          <button className="btn btn-outline rounded-3xl px-6">
             Learn More
           </button>
         </div>
       </div>
 
-      <div className="flex-1">
-        <img src={BannerPic} alt="Banner" className="w-full" />
+      <div className="flex-1 flex justify-center">
+        <img
+          src={BannerPic}
+          alt="Development stack illustration"
+          className="w-full max-w-lg object-contain drop-shadow-xl"
+        />
       </div>
 
-    </div>
+    </section>
   );
 };
 
