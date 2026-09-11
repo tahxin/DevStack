@@ -48,7 +48,7 @@ export default function TechCard({ id, name, description, logo, badge, tags, rat
             className={`btn w-full rounded-xl transition-all ${
               isAdded
                 ? 'btn-success btn-outline cursor-not-allowed opacity-70'
-                : 'bg-gradient-to-r from-blue-500 to-purple-500 text-white border-none hover:opacity-90'
+                : 'bg-linear-to-r from-blue-500 to-purple-500 text-white border-none hover:opacity-90'
             }`}
             onClick={() => onAdd({ id, name, logo, tags })}
             disabled={isAdded}

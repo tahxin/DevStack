@@ -7,7 +7,7 @@ const Banner = () => {
       <div className="flex-1 flex flex-col gap-6">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
           Build Your Ideal{' '}
-          <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
             Development Stack
           </span>
         </h1>
@@ -19,7 +19,7 @@ const Banner = () => {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <button className="btn rounded-3xl bg-gradient-to-r from-blue-500 to-purple-500 text-white border-none hover:opacity-90 px-6">
+          <button className="btn rounded-3xl bg-linear-to-r from-blue-500 to-purple-500 text-white border-none hover:opacity-90 px-6">
             Explore Technologies
           </button>
 
