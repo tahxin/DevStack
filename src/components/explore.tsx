@@ -2,7 +2,7 @@ const Explore = () => {
     return (
         <div className="flex flex-col mb-8 px-4 md:px-8">
             <h1 className="text-4xl font-extrabold text-slate-800 mb-2">
-            Explore the <span className="bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Technologies</span>
+            Explore the <span className="brand-gradient-text">Technologies</span>
             </h1>
             <p className="text-slate-500">
                 Pick one technology per category to build your ideal stack.

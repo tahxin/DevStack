@@ -22,7 +22,7 @@ const Navbar = () => {
 
         <div className="flex gap-3">
           <button className="btn btn-ghost">Sign In</button>
-          <button className="btn bg-linear-to-r from-blue-500 to-purple-500 text-white border-none hover:opacity-90 rounded-3xl">Sign Up</button>
+          <button className="btn btn-brand rounded-3xl">Sign Up</button>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
 
         <div className="flex justify-end gap-2">
           <button className="btn btn-ghost btn-sm">Sign In</button>
-          <button className="btn btn-sm bg-linear-to-r from-blue-500 to-purple-500 text-white border-none hover:opacity-90 rounded-3xl">Sign Up</button>
+          <button className="btn btn-sm btn-brand rounded-3xl">Sign Up</button>
         </div>
 
       </div>

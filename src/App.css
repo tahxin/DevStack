@@ -1,2 +1,25 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* ─── Brand gradient — change this one value to re-theme the whole app ─── */
+:root {
+  --brand-gradient: linear-gradient(to right, #3b82f6, #a855f7);
+}
+
+/* Gradient text (e.g. headings, brand name) */
+@utility brand-gradient-text {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Gradient filled button */
+@utility btn-brand {
+  background: var(--brand-gradient);
+  color: white;
+  border: none;
+  &:hover {
+    opacity: 0.9;
+  }
+}

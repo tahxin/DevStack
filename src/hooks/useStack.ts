@@ -4,8 +4,8 @@ import { toast } from 'react-toastify'
 export type Tech = {
   id: string
   name: string
-  logo: string
-  tags: string[]
+  icon: string
+  category: string
 }
 
 export function useStack() {

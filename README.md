@@ -14,22 +14,22 @@
 
 ---
 
-## 📖 About
+##  About
 
-DevStack is a developer tool for discovering and assembling the perfect tech stack for your next project. Browse curated technologies across frontend, backend, database, language, styling, and DevOps categories — then handpick the ones that fit your project into your personal stack panel.
+DevStack is a developer tool for discovering and assembling the perfect tech stack for your next project. Browse curated technologies across frontend, backend, database, language, styling, and DevOps categories - then handpick the ones that fit your project into your personal stack panel.
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔍 Browse Technologies
-Explore a curated library of modern technologies displayed in a clean, responsive grid (1 column on mobile → 2 on tablet → 3 on desktop). Each card shows the technology's logo, description, category tags, and community rating.
+###  Browse Technologies
+Explore a curated library of modern technologies displayed in a clean, responsive grid.Each card shows the technology's logo, description, category tags, and community rating.
 
-### 📦 Build Your Stack
+###  Build Your Stack
 Click **"Add to Stack"** on any technology card to add it to your personal **Your Stack** panel. Each item in the panel displays the icon, name, and category. You can remove individual items or clear the entire stack at once.
 
-### 🔔 Smart Feedback with Toast Notifications
-Every action in the stack — adding, removing, clearing, or attempting a duplicate add — triggers a contextual toast notification powered by **react-toastify**, so you always know what happened and why.
+###  Smart Feedback with Toast Notifications
+Every action in the stack - adding, removing, clearing, or attempting a duplicate add - triggers a contextual toast notification powered by **react-toastify**, so you always know what happened and why.
 
 ---
 
@@ -45,12 +45,12 @@ Every action in the stack — adding, removing, clearing, or attempting a duplic
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/devstack.git
-cd devstack
+git clone [https://github.com/tahxin/devstack.git](https://github.com/tahxin/DevStack.git)
+cd DevStack
 
 # Install dependencies
 npm install
@@ -86,7 +86,7 @@ src/
 
 ---
 
-## 💡 React Q&A
+##  React Q&A
 
 ### 1. What is JSX, and why is it used in React?
 
@@ -171,6 +171,8 @@ This pattern keeps all the real state in the parent (`App.tsx` via `useStack`) w
 
 <div align="center">
 
-Made with ❤️ and a lot of ☕
+Made with back-breaking fever, terrible posture , tasty NAPA Extra , and an exam pressure sitting permanently on my mind 📚💀.
+
+Thank you. 🫡
 
 </div>
