@@ -14,21 +14,21 @@
 
 ---
 
-## 📖 About
+##  About
 
 DevStack is a developer tool for discovering and assembling the perfect tech stack for your next project. Browse curated technologies across frontend, backend, database, language, styling, and DevOps categories - then handpick the ones that fit your project into your personal stack panel.
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔍 Browse Technologies
+###  Browse Technologies
 Explore a curated library of modern technologies displayed in a clean, responsive grid.Each card shows the technology's logo, description, category tags, and community rating.
 
-### 📦 Build Your Stack
+###  Build Your Stack
 Click **"Add to Stack"** on any technology card to add it to your personal **Your Stack** panel. Each item in the panel displays the icon, name, and category. You can remove individual items or clear the entire stack at once.
 
-### 🔔 Smart Feedback with Toast Notifications
+###  Smart Feedback with Toast Notifications
 Every action in the stack - adding, removing, clearing, or attempting a duplicate add - triggers a contextual toast notification powered by **react-toastify**, so you always know what happened and why.
 
 ---
@@ -45,7 +45,7 @@ Every action in the stack - adding, removing, clearing, or attempting a duplicat
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ```bash
 # Clone the repository
