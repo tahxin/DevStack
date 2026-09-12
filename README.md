@@ -90,50 +90,49 @@ src/
 
 ### 1. What is JSX, and why is it used in React?
 
-JSX is a syntax that lets you write HTML-like code directly inside JavaScript. React uses it because it makes it much easier to describe what the UI should look like alongside the logic that controls it — instead of writing `React.createElement(...)` calls everywhere, you just write `<button>Click me</button>` and React handles the rest under the hood.
+JSX is JavaScript XML which is used to write html like code in JS. It makes it easier to write react code because the syntax is similar to html making it easier to write front end codes.
 
 ---
 
 ### 2. What is the difference between props and state?
 
-**Props** are values passed *into* a component from its parent — they're read-only from the component's perspective, like function arguments.  
-**State** is data that lives *inside* a component and can change over time. When state changes, React re-renders the component to reflect the new data.
-
-In short: props come from outside, state is managed from within.
+Props are data passed from parent to child in JS.
+State is a value that is managed inside an component and can be changed to update the ui or re-render components using react.
 
 ---
 
 ### 3. What does the `useState` hook do, and where was it used in this project?
 
-`useState` lets a component remember a value between renders and re-render automatically when that value changes.
+useState allows a React component to remember its state that can be changed or manipulated to re-render components based on state changes ie state value changes.
 
-In this project:
-- **`useStack.ts`** uses `useState<Tech[]>([])` to track the list of technologies the user has added to their stack.
-- **`navbar.tsx`** uses `useState(false)` to track whether the mobile menu is open or closed.
+In my repo I used useState in 
+
+useStack.ts file to track the list of technologies the user adds to their stack.
+And navbar.tsx uses useState(false) to track responsive mobile menu.And uses the default value of false to make the website responsive.
 
 ---
 
 ### 4. What does the `useEffect` hook do, and why would you need it to load JSON data?
 
-`useEffect` lets you run side effects — code that reaches outside the component, like fetching data, subscribing to events, or setting up timers — after the component renders.
+`useEffect` is used to do side effects like fetching data or doing something after the page loads. Maybe connected to concepts like Hydration and and Lighthouse Performance management checks.
 
-If you were loading the tech data from an external JSON file or API, you'd use `useEffect` so the fetch happens *after* the component mounts, not during the render itself (which would cause issues). In this project the data is imported statically from `techstack.ts`, so no `useEffect` was needed — but if the data came from an API, you'd fetch it inside a `useEffect` and store the result in state.
+In this project, `technologies.tsx` uses `useEffect` to fetch data from `/techstack.json` . The returned data then is used in the `techs` state with `useState`, which makes the tech cards load after the loading processes finish.Most likely an async function and these are used to make async functions easier.
 
 ---
 
 ### 5. Why does every item in a `.map()` list need a unique `key` prop?
 
-React uses the `key` to track which items in a list are which across re-renders. Without a unique key, React can't tell whether an item moved, was removed, or was added — so it re-renders everything from scratch, which is slow and can cause bugs (like inputs losing focus or animations glitching).
+The key is there to helps React identify each item in a given list I presume. It helps with optimization. This id helps React keep unique items in track so that they dont't need to be re-rendered everytime.
 
-In this project, each `<TechCard>` uses `key={tech.id}` (e.g. `"react"`, `"nodejs"`) since those IDs are unique per technology.
+In this project, each `<TechCard>` uses `key={tech.id}` since those ids are unique per technology.
 
 ---
 
 ### 6. What is conditional rendering? Show one place you used it.
 
-Conditional rendering means only showing a piece of UI when a certain condition is true — similar to an `if` statement but inside JSX.
+Conditional rendering means only showing a part of the Website when a certain condition is true/false.Basically an if else statement but in JSX.
 
-In **`mystack.tsx`**, when the stack is empty an empty-state message is shown:
+In **`mystack.tsx`**, when the stack is empty an "Your stack is empty" messege is shown:
 
 ```tsx
 {stack.length === 0 && (
@@ -143,29 +142,11 @@ In **`mystack.tsx`**, when the stack is empty an empty-state message is shown:
 )}
 ```
 
-The dashed box only renders when there are no items. When you add a technology, it disappears and the stack items appear instead.
-
 ---
 
 ### 7. How do you pass data from parent to child, and how does a child send something back?
 
-**Parent → Child:** through **props**. The parent includes the child in JSX and passes values as attributes:
-
-```tsx
-// App.tsx (parent) passes the stack and a handler down
-<Technologies stack={stack} onAdd={addToStack} />
-```
-
-**Child → Parent:** through **callback functions** passed as props. The parent defines the function, passes it to the child, and the child calls it when something happens:
-
-```tsx
-// TechCard (child) calls onAdd when the button is clicked
-<button onClick={() => onAdd({ id, name, logo, tags })}>
-  Add to Stack
-</button>
-```
-
-This pattern keeps all the real state in the parent (`App.tsx` via `useStack`) while child components stay focused on rendering and triggering events.
+Using Props and Using Callback Functions 
 
 ---
 
