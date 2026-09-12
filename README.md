@@ -103,12 +103,12 @@ State is a value that is managed inside an component and can be changed to updat
 
 ### 3. What does the `useState` hook do, and where was it used in this project?
 
-useState allows a React component to remember its state that can be changed or manipulated to re-render components based on state changes ie state value changes.
+`useState` allows a React component to remember its state that can be changed or manipulated to re-render components based on state changes ie state value changes.
 
 In my repo I used useState in 
 
-useStack.ts file to track the list of technologies the user adds to their stack.
-And navbar.tsx uses useState(false) to track responsive mobile menu.And uses the default value of false to make the website responsive.
+`useStack.ts` file to track the list of technologies the user adds to their stack.
+And `navbar.tsx` uses `useState(false)` to track responsive mobile menu.And uses the default value of false to make the website responsive.
 
 ---
 
@@ -152,7 +152,7 @@ Using Props and Using Callback Functions
 
 <div align="center">
 
-Made with back-breaking fever, terrible posture , tasty NAPA Extra , and an exam pressure sitting permanently on my mind 📚💀.
+Made with back-breaking fever, terrible posture , tasty NAPA Extra , and my uni exams looming over my mind 📚💀.
 
 Thank you. 🫡
 
